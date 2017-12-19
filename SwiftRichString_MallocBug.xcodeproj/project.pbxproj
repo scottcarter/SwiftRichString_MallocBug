@@ -11,9 +11,12 @@
 		A79B3FDB1FE945F900AB2E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B3FDA1FE945F900AB2E96 /* ViewController.swift */; };
 		A79B3FDD1FE945F900AB2E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B3FDC1FE945F900AB2E96 /* Assets.xcassets */; };
 		A79B3FE01FE945F900AB2E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B3FDE1FE945F900AB2E96 /* Main.storyboard */; };
+		E5C35EA738ED72C8A17D124D /* Pods_SwiftRichString_MallocBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775ECB64B6E6C0DEFD0E0D8B /* Pods_SwiftRichString_MallocBug.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01119EFE3F3AD94D4CEBB5E2 /* Pods-SwiftRichString_MallocBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichString_MallocBug.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichString_MallocBug/Pods-SwiftRichString_MallocBug.release.xcconfig"; sourceTree = "<group>"; };
+		775ECB64B6E6C0DEFD0E0D8B /* Pods_SwiftRichString_MallocBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRichString_MallocBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B3FD51FE945F900AB2E96 /* SwiftRichString_MallocBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRichString_MallocBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B3FD81FE945F900AB2E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79B3FDA1FE945F900AB2E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		A79B3FDF1FE945F900AB2E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A79B3FE11FE945F900AB2E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A79B3FE21FE945F900AB2E96 /* SwiftRichString_MallocBug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRichString_MallocBug.entitlements; sourceTree = "<group>"; };
+		CE1F105543A00889423F9DAC /* Pods-SwiftRichString_MallocBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichString_MallocBug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichString_MallocBug/Pods-SwiftRichString_MallocBug.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C35EA738ED72C8A17D124D /* Pods_SwiftRichString_MallocBug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D90FA653F094BEF950690BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				775ECB64B6E6C0DEFD0E0D8B /* Pods_SwiftRichString_MallocBug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A47D970E5F6F9D3F2908B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F105543A00889423F9DAC /* Pods-SwiftRichString_MallocBug.debug.xcconfig */,
+				01119EFE3F3AD94D4CEBB5E2 /* Pods-SwiftRichString_MallocBug.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A79B3FCC1FE945F900AB2E96 = {
 			isa = PBXGroup;
 			children = (
 				A79B3FD71FE945F900AB2E96 /* SwiftRichString_MallocBug */,
 				A79B3FD61FE945F900AB2E96 /* Products */,
+				8A47D970E5F6F9D3F2908B2E /* Pods */,
+				4D90FA653F094BEF950690BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A79B3FE51FE945F900AB2E96 /* Build configuration list for PBXNativeTarget "SwiftRichString_MallocBug" */;
 			buildPhases = (
+				F4FBAC4A3F96AE2FD5278AE8 /* [CP] Check Pods Manifest.lock */,
 				A79B3FD11FE945F900AB2E96 /* Sources */,
 				A79B3FD21FE945F900AB2E96 /* Frameworks */,
 				A79B3FD31FE945F900AB2E96 /* Resources */,
+				BC6A1C8EB14FAD0BFB4FD8D3 /* [CP] Embed Pods Frameworks */,
+				219CDD4C335CAB9A45B4A938 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		219CDD4C335CAB9A45B4A938 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichString_MallocBug/Pods-SwiftRichString_MallocBug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC6A1C8EB14FAD0BFB4FD8D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichString_MallocBug/Pods-SwiftRichString_MallocBug-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftRichString/SwiftRichString.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRichString.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichString_MallocBug/Pods-SwiftRichString_MallocBug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FBAC4A3F96AE2FD5278AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRichString_MallocBug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A79B3FD11FE945F900AB2E96 /* Sources */ = {
@@ -261,6 +342,7 @@
 		};
 		A79B3FE61FE945F900AB2E96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1F105543A00889423F9DAC /* Pods-SwiftRichString_MallocBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftRichString_MallocBug/SwiftRichString_MallocBug.entitlements;
@@ -271,12 +353,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scarter.SwiftRichString-MallocBug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A79B3FE71FE945F900AB2E96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01119EFE3F3AD94D4CEBB5E2 /* Pods-SwiftRichString_MallocBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftRichString_MallocBug/SwiftRichString_MallocBug.entitlements;
@@ -287,7 +370,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scarter.SwiftRichString-MallocBug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
